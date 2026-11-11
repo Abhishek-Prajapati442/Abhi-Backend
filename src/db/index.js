@@ -6,7 +6,7 @@ const connectDB = async () => {
     const connectionInstance = await mongoose.connect(
       `${process.env.MONGODB_URI}/${DB_NAME}`
     );
-    console.log(connectionInstance)
+    //console.log(connectionInstance)
     //  just curios to know how many things connectionInstance conatins?
     console.log(
       `MongoDB connected!! DB HOST: ${connectionInstance.connection.host}`
